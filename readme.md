@@ -10,4 +10,8 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+1. Clone the project.
+2. Install docker if not already installed.
+3. Run `docker -v` and `docker-compose -v` in the terminal to see that everything is installed.
+4. From the root of the project, run `docker-compose up` to get the backend and frontend installed.
+5. The first time you do this, it will take a little while as docket needs to build both containers.
