@@ -29,7 +29,7 @@ class Editor extends React.Component {
   constructor() {
     super();
 
-    const updateFieldEvent = (key) => (ev) => 
+    const updateFieldEvent = (key) => (ev) =>
       this.props.onUpdateField(key, ev.target.value);
     this.changeTitle = updateFieldEvent("title");
     this.changeDescription = updateFieldEvent("description");
@@ -53,7 +53,7 @@ class Editor extends React.Component {
         title: this.props.title,
         description: this.props.description,
         image: this.props.image,
-        tagList: this.props.tagList
+        tagList: this.props.tagList,
       };
 
       const slug = { slug: this.props.itemSlug };

@@ -19,6 +19,7 @@
     "@babel/plugin-transform-react-jsx": "^7.18.10",
     "bootstrap": "^4.6.0",
     "bootstrap-icons": "^1.7.1",
+    "corepack": "^0.14.1",
     "history": "^4.6.3",
     "jquery": "^3.6.1",
     "marked": "^0.3.6",
