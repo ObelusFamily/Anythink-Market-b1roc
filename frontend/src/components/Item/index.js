@@ -35,7 +35,6 @@ class Item extends React.Component {
   }
 
   render() {
-    console.log('Props: ', this.props);
     if (!this.props.item) {
       return null;
     }
