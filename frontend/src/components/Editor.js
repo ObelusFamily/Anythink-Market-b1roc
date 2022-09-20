@@ -10,7 +10,6 @@ import {
   EDITOR_PAGE_UNLOADED,
   UPDATE_FIELD_EDITOR,
 } from "../constants/actionTypes";
-import backupImage from "../imgs/placeholder.png";
 
 const mapStateToProps = (state) => ({
   ...state.editor,
@@ -53,8 +52,8 @@ class Editor extends React.Component {
       const item = {
         title: this.props.title,
         description: this.props.description,
-        image: this.props.image || backupImage,
-        tagList: this.props.tagList,
+        image: this.props.image,
+        tagList: this.props.tagList
       };
 
       const slug = { slug: this.props.itemSlug };
