@@ -10,6 +10,7 @@ import {
   EDITOR_PAGE_UNLOADED,
   UPDATE_FIELD_EDITOR,
 } from "../constants/actionTypes";
+import backupImage from "../imgs/placeholder.png";
 
 const mapStateToProps = (state) => ({
   ...state.editor,
@@ -29,8 +30,7 @@ class Editor extends React.Component {
   constructor() {
     super();
 
-    const updateFieldEvent = (key) => (ev) =>
-      this.props.onUpdateField(key, ev.target.value);
+    const updateFieldEvent = (key) => (ev) => this.props.onUpdateField(key, ev.target.value);
     this.changeTitle = updateFieldEvent("title");
     this.changeDescription = updateFieldEvent("description");
     this.changeImage = updateFieldEvent("image");
@@ -52,7 +52,7 @@ class Editor extends React.Component {
       const item = {
         title: this.props.title,
         description: this.props.description,
-        image: this.props.image,
+        image: this.props.image || backupImage,
         tagList: this.props.tagList,
       };
 
